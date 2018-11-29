@@ -20,11 +20,15 @@ class EpisodeViewController: UIViewController {
     
     var  episode: GOTEpisode?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpSeason()
         // Do any additional setup after loading the view.
     }
+    
+   
+    
     
     func setUpSeason() {
         episodeImage.image = UIImage(named: episode?.mediumImageID ?? "")
